@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>The Sircar Bar</title>
+</head>
+
+<body>
+  <section class="showcasediscover">
+      
+    <header>
+      <h2 class="logo">My Work</h2>
+      <div class="toggle"></div>
+    </header>
+
+    <div class="overlay"></div>
+
+    <div class="text">
+      <h3>Dow Jones</h3>
+      <p>I worked on the Product Health team and built a beautiful dashboard used by hundreds of tech leads and engineers to 
+          protect world-class products like The Wall Street Journal.  </p>
+      <a href="#">What I Built</a>
+    </div>
+
+    <div class="text">
+        <h3>SGA</h3>
+        <p>I represented the interests of 30,000 students to federal & state governments, led an agile committee of advocates, 
+            and legislated to protect women on campus from violence.  </p>
+        <a href="#">What I Did</a>
+        
+    </div>  
+
+    </section>
+    
+    <div class="menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="adi.html">Adi Sircar</a></li>
+          <li><a href="news.html">News & Ideas</a></li>
+          <li><a href="discover.html">Discover</a></li>
+        </ul>
+      </div>
+
+      <script>
+        const menuToggle = document.querySelector('.toggle');
+        const showcasediscover = document.querySelector('.showcasediscover');
+        menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcasediscover.classList.toggle('active');
+    });
+      </script>
+    </body>
+    </html>

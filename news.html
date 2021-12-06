@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>The Sircar Bar</title>
+</head>
+
+<body>
+  <section class="showcasenews">
+    <header>
+      <h2 class="logo">News & Ideas</h2>
+      <div class="toggle"></div>
+    </header>
+
+    <div class="overlay"></div>
+    <div class="text">
+      <h3>Integrity</h3>
+      <p>How do we find trusted news in a world littered with misinformation 
+          and fake news? Here are my thoughts.</p>
+      <a href="https://adisircar.medium.com/my-thoughts-on-integrity-in-news-494c4c3ada74/" target="_blank" rel="noopener noreferrer">Learn</a>
+    </div>
+    <div class="text">
+        <h3>Afghanistan</h3>
+        <p>Check out my exclusive interview with Mariam Farzayee, the nation's top advocate for Afghan refugees.</p>
+        <a href="https://bit.ly/MariamFarzayee" target="_blank" rel="noopener noreferrer">Learn</a>
+      </div>
+  </section>
+  <div class="menu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="adi.html">Adi Sircar</a></li>
+      <li><a href="news.html">News & Ideas</a></li>
+      <li><a href="discover.html">Discover</a></li>
+    </ul>
+  </div>
+  <script>
+    const menuToggle = document.querySelector('.toggle');
+    const showcase = document.querySelector('.showcasenews');
+    menuToggle.addEventListener('click', () => {
+    menuToggle.classList.toggle('active');
+    showcase.classList.toggle('active');
+});
+  </script>
+</body>
+</html>
